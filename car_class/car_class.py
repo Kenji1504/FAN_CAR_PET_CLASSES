@@ -32,3 +32,6 @@ class Car:
 # create a method that gets the car's current speed
     def get_speed(self):
         return self.__speed
+# display car's current speed
+    def display_speed(self):
+        print(f"The {self.__year_model} model {self.__make} car's current speed is {self.get_speed()}")

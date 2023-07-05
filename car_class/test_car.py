@@ -1,6 +1,6 @@
 from car_class import Car
 
-car_1 = Car("1975", "Honda Civic", 0)
+car_1 = Car("2022", "Honda Civic", 0)
 car_1.accelerate()
 car_1.brake()
-print(car_1.get_speed())
+car_1.display_speed()
