@@ -3,6 +3,7 @@
 # Creating a car class that contains attributes and methods 
 # required by the Assignment # 9
 
+import time
 # create a class named car
 class Car:
 # create a constructor containing the car's year model, make, and its current speed
@@ -24,10 +25,12 @@ class Car:
 # create a method that will accelerate the car
     def accelerate(self):
         print(f"{self.__year_model} model {self.__make} is accelarating.")
+        time.sleep(1)
         self.__speed += 5
 # create a method that can trigger the car's brake
     def brake(self):
         print(f"{self.__year_model} model {self.__make} brakes.")
+        time.sleep(1)
         self.__speed -= 5
 # create a method that gets the car's current speed
     def get_speed(self):
