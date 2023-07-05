@@ -29,5 +29,7 @@ class Pet:
         except:
             raise ValueError("age is not an int.")
 # create a method that gets the name of the pet
+    def get_name(self):
+        return self.__name
 # create a method that gets the pet's animal type
 # create a method that gets the pet's age
