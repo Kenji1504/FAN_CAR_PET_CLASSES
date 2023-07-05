@@ -30,3 +30,5 @@ class Car:
         print(f"{self.__year_model} model {self.__make} brakes.")
         self.__speed -= 5
 # create a method that gets the car's current speed
+    def get_speed(self):
+        return self.__speed
