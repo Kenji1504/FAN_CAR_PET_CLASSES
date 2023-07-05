@@ -24,12 +24,12 @@ class Car:
         self.__speed = speed
 # create a method that will accelerate the car
     def accelerate(self):
-        print(f"{self.__year_model} model {self.__make} is accelarating.")
+        print("\033[1m" + "\033[96m" + f"{self.__year_model} model {self.__make} is accelarating.")
         time.sleep(1)
         self.__speed += 5
 # create a method that can trigger the car's brake
     def brake(self):
-        print(f"{self.__year_model} model {self.__make} brakes.")
+        print("\033[1m" + "\033[96m" + f"{self.__year_model} model {self.__make} brakes.")
         time.sleep(1)
         self.__speed -= 5
 # create a method that gets the car's current speed
@@ -37,5 +37,5 @@ class Car:
         return self.__speed
 # display car's current speed
     def display_speed(self):
-        print(f"The {self.__year_model} model {self.__make} car's current speed is {self.get_speed()}")
+        print("\033[1m" + "\033[96m" + f"The {self.__year_model} model {self.__make} car's current speed is {self.get_speed()}")
         time.sleep(1)
