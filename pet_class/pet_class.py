@@ -32,4 +32,6 @@ class Pet:
     def get_name(self):
         return self.__name
 # create a method that gets the pet's animal type
+    def get_animal_type(self):
+        return self.__animal_type
 # create a method that gets the pet's age
