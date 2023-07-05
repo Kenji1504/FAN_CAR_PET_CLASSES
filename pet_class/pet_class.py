@@ -3,6 +3,7 @@
 # creating a pet class which contains the following 
 # data attributes and methods required for the Assignment #9.
 
+import time
 #create a class named "Pet"
 class Pet:
     # create the constructors, following attributes are pet's name, animal type, and its age
@@ -37,4 +38,13 @@ class Pet:
 # create a method that gets the pet's age
     def get_age(self):
         return self.__age
-    
+# create a method that can indicate the pet's overall properties
+    def pet_info(self):
+        print("\033[1m" + "\033[95m" + f"Hello owner! my name is {self.get_name()}.")
+        time.sleep(2)
+        print(f"I am a {self.get_animal_type()}")
+        time.sleep(2)
+        print(f"And I'm {self.get_age()} years old.")
+        time.sleep(2)
+        print("I'll be in your care from now on. I hope we'll get along!\n\n")
+        time.sleep(2)
