@@ -23,6 +23,11 @@ class Pet:
         except:
             raise ValueError("animal type is not str type.")
 # create a method that sets the pet's age
+    def set_age(self, age):
+        try:
+            self.__age = int(age)
+        except:
+            raise ValueError("age is not an int.")
 # create a method that gets the name of the pet
 # create a method that gets the pet's animal type
 # create a method that gets the pet's age
