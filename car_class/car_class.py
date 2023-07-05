@@ -38,3 +38,4 @@ class Car:
 # display car's current speed
     def display_speed(self):
         print(f"The {self.__year_model} model {self.__make} car's current speed is {self.get_speed()}")
+        time.sleep(1)
