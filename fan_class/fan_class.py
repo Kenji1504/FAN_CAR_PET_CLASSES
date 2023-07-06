@@ -48,6 +48,8 @@ class Fan:
     def get_color(self):
         return self.__color 
 # create a method that will set the fan's speed
+    def set_speed(self, speed):
+        self.__speed = speed
 # create a method that will set the fan's power indicator
 # create a method that will set the fan's radius
 # create a method that will set the fan's color
