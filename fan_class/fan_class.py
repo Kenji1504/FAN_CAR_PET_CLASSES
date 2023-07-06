@@ -51,5 +51,7 @@ class Fan:
     def set_speed(self, speed):
         self.__speed = speed
 # create a method that will set the fan's power indicator
+    def set_power_indicator(self, power_indicator):
+        self.__power_indicator = power_indicator
 # create a method that will set the fan's radius
 # create a method that will set the fan's color
