@@ -3,6 +3,8 @@
 # Creating a Fan class containing the following attributes and 
 # methods required by Assignment #9.
 
+import time
+
 SLOW = 1
 MEDIUM = 2
 FAST = 3 
@@ -59,3 +61,17 @@ class Fan:
 # create a method that will set the fan's color
     def set_color(self, color):
         self.__color = color
+
+# to display fan's properties
+    def display_fan(self):
+        time.sleep(1)
+        print("\033[1m" + "\033[94m" + f"Speed : {self.get_speed()}")
+        time.sleep(1)
+        print(f"Power: {self.get_power_indicator()}")
+        time.sleep(1)
+        print(f"Radius: {self.get_radius()}")
+        time.sleep(1)
+        print(f"Color: {self.get_color()}")
+        time.sleep(1)
+        print("\n")
+        time.sleep(1)
