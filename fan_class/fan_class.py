@@ -19,12 +19,14 @@ class Fan:
         except:
             raise ValueError("attribute does not match assigned type.")
     
+    # such as speed, power indicator, radius, and color
         self.__speed = speed
         self.__power_indicator = power_indicator
         self.__radius = radius
         self.__color = color
-# such as speed, power indicator, radius, and color
-# create a method that access the fan's speed
+    # create a method that access the fan's speed
+    def get_speed(self):
+        return self.__speed
 # create a method that access the fan's power indicator
 # create a method that access the fan's radius
 # create a method that access the fan's color
