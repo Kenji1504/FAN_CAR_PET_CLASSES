@@ -8,12 +8,21 @@ MEDIUM = 2
 FAST = 3 
 # create a class named 'Fan'
 class Fan:
+    # create a constructor, contains the fan's data attributes 
     def __init__(self, speed= SLOW, power_indicator= False, radius= 5.0, color= "Blue"):
+        # validate inputs first
+        try:
+            speed = int(speed)
+            power_indicator = bool(power_indicator)
+            radius = float(radius)
+            color = str(color)
+        except:
+            raise ValueError("attribute does not match assigned type.")
+    
         self.__speed = speed
         self.__power_indicator = power_indicator
         self.__radius = radius
         self.__color = color
-# create a constructor, contains the fan's data attributes 
 # such as speed, power indicator, radius, and color
 # create a method that access the fan's speed
 # create a method that access the fan's power indicator
