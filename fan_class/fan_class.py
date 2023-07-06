@@ -42,6 +42,8 @@ class Fan:
             case False:
                 return "OFF"
 # create a method that access the fan's radius
+    def get_radius(self):
+        return self.__radius
 # create a method that access the fan's color
 # create a method that will set the fan's speed
 # create a method that will set the fan's power indicator

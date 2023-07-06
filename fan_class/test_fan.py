@@ -5,3 +5,4 @@ fan_2 = Fan(2, False, 5.0, "Blue" )
 
 print(fan_1.get_speed())
 print(fan_1.get_power_indicator())
+print(fan_1.get_radius())
