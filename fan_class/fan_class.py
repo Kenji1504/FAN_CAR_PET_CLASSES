@@ -54,4 +54,6 @@ class Fan:
     def set_power_indicator(self, power_indicator):
         self.__power_indicator = power_indicator
 # create a method that will set the fan's radius
+    def set_radius(self, radius):
+        self.__radius = radius
 # create a method that will set the fan's color
